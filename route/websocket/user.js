@@ -83,7 +83,7 @@ WebSocketObserver().listener('userset/delete', (data) => {
             response.wsSend(data.ws, 'userset/delete', true);
             response.wsMsgWindow(data.ws, '删除用户成功√');
         }, () => {
-            response.wsMsgWindow(data.ws, '删除用户失败√');
+            response.wsMsgWindow(data.ws, '删除用户失败');
         });
         return;
     } catch (e) {
